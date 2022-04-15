@@ -1,4 +1,3 @@
-import 'react-native-gesture-handler';
 import React from 'react';
 import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
 import EventScreen from './app/screens/EventScreen/EventScreen';
@@ -7,7 +6,7 @@ const App = () => {
   return (
     <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
       <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
-      <EventScreen />
+      <EventScreen eventID={1} />
     </SafeAreaView>
   );
 };

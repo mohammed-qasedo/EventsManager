@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   icon: {
     width: 15,
     height: 15,
-    marginTop: 2,
+    marginTop: 4,
+    alignSelf: 'baseline',
   },
   text: {
     fontSize: 14,

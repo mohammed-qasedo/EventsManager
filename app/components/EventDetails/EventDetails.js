@@ -11,27 +11,27 @@ const DataItem = ({item}) => (
   </View>
 );
 
-const EventDetails = () => {
+const EventDetails = ({event}) => {
   return (
     <View style={styles.container}>
       <DataItem
         item={{
           title: 'organizers',
-          data: 'mohammed qasedo',
+          data: event.title,
           imgUri: require('../../assets/asset60.png'),
         }}
       />
       <DataItem
         item={{
           title: 'place',
-          data: 'Palestine, Tulkarm',
+          data: event.body.substring(0, 10),
           imgUri: require('../../assets/asset61.png'),
         }}
       />
       <DataItem
         item={{
           title: 'Time',
-          data: '4pm - 10pm',
+          data: event.userId,
           imgUri: require('../../assets/asset62.png'),
         }}
       />
